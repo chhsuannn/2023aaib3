@@ -5,11 +5,11 @@ public:
     int calPoints(vector<string>& operations) {
         vector<int> a;
         for(string s: operations){
-            int N = a.size(); //有這麼多的數
-            if(s=="+") a.push_back( a[N-1] + a[N-2] );
-            else if(s=="D") a.push_back( a[N-1]*2 );
+            int N = a.size(); //a有N個數
+            if(s=="+") a.push_back( a[N-1] + a[N-2] ); //最後2筆相加，塞
+            else if(s=="D") a.push_back( a[N-1]*2 ); //最後1筆兩倍，塞
             else if(s=="C") a.pop_back(); //吐掉
-            else a.push_back( stoi(s) ); //數字加入
+            else a.push_back( stoi(s) ); //數字，塞
         }
         int ans = 0; //把裡面全部加起來
         for(int b : a ) ans+=b;
