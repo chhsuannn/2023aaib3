@@ -1,4 +1,4 @@
-/// week06-2.cpp CPE UVA 10107 - What is the Median?
+/// week06-2c.cpp CPE UVA 10107 - What is the Median?
 #include <iostream>
 #include <vector>
 #include <algorithm>
