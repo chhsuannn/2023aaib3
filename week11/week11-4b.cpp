@@ -13,7 +13,7 @@ int main(){
 	int n;
 	while( cin >> n ){
 		if(n==0) break;
-		 n = f(n);
+		 n =  f(f(f(n)));
 		cout << n  << "\n";
 	}
 }
